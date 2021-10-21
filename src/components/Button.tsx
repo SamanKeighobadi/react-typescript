@@ -1,6 +1,7 @@
+import {MouseEvent} from "react";
 
 type ButtonProps = {
-    handleClick : () => void;
+    handleClick : (event: MouseEvent<HTMLButtonElement> ) => void;
 }
 
 const Button = (props:ButtonProps) => {

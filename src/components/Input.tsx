@@ -1,11 +1,14 @@
+import {ChangeEvent} from 'react'
+
 type InputPorps = {
-    handleInputChange : () => void;
+    handleInputChange : (event:ChangeEvent<HTMLInputElement>) => void;
+    value:string;
 }
 
 const Input = (props:InputPorps) => {
     return (
         <div>
-            <input type="text" onChange={props.handleInputChange} />
+            <input type="text" value={props.value} onChange={ props.handleInputChange} />
         </div>
     );
 };
