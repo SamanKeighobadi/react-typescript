@@ -1,5 +1,7 @@
+import Button from "./components/Button";
 import Header from "./components/Header";
 import Hello from "./components/Hello";
+import Input from "./components/Input";
 import Navbar from "./components/Navbar";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
@@ -25,6 +27,8 @@ function App() {
       <Status status="success" />
       <Header>
         <Navbar>Sama Keighobadi</Navbar>
+        <Input handleInputChange={() => console.log('input changed')} />
+        <Button handleClick={() => console.log('Button clicked')} />
       </Header>
     </div>
   );
