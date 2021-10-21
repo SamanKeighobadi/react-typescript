@@ -1,11 +1,12 @@
 
 type HelloProps = {
     name: String;
-    numberOfMessage:number;
+    numberOfMessage?:number;
     isLogged:Boolean;
 }
 
 const Hello = (props:HelloProps) => {
+    
     return (
         <div>
           {props.isLogged ? (
