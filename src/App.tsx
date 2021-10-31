@@ -1,8 +1,9 @@
-import Button from "./components/Button";
+// import Button from "./components/Button";
 import Container from "./components/Container";
 import Header from "./components/Header";
-import Input from "./components/Input";
+// import Input from "./components/Input";
 import Navbar from "./components/Navbar";
+import Loggin from "./components/state/Loggin";
 // import Hello from "./components/Hello";
 // import Person from "./components/Person";
 // import PersonList from "./components/PersonList";
@@ -22,15 +23,12 @@ function App() {
 
   return (
     <div className="App">
-      <Container styles={{ margin: "0 200px", background: "red" }}>
+      <>
         <Header>
           <Navbar>Sama Keighobadi</Navbar>
-          <Input value={""} handleInputChange={(event) => console.log(event)} />
-          <Button
-            handleClick={(event) => console.log("Button clicked", event)}
-          />
+          <Loggin />
         </Header>
-      </Container>
+      </>
     </div>
   );
 }
