@@ -1,16 +1,12 @@
-import {CSSProperties, ReactNode} from "react";
+import { CSSProperties, ReactNode } from "react";
 
 type ContainerProps = {
-    styles: CSSProperties;
-    children: ReactNode;
-}
+  styles: CSSProperties;
+  children: ReactNode;
+};
 
-const Container = (props:ContainerProps) => {
-    return (
-        <div style={props.styles}>
-            {props.children}
-        </div>
-    );
+const Container = (props: ContainerProps) => {
+  return <div style={props.styles}>{props.children}</div>;
 };
 
 export default Container;

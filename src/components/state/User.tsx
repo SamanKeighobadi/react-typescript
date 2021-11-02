@@ -1,18 +1,18 @@
 import { useState } from "react";
 
 type AuthUser = {
-    name:string;
-    email:string;
-}
+  name: string;
+  email: string;
+};
 
 export const User = () => {
   const [user, setUser] = useState<AuthUser | null>(null);
 
   const handleLogin = () => {
-      setUser({
-          name:'saman keighobadi',
-          email:"saman.keighobadi@gmail.com"
-      })
+    setUser({
+      name: "saman keighobadi",
+      email: "saman.keighobadi@gmail.com",
+    });
   };
   const handleLogout = () => {};
 
